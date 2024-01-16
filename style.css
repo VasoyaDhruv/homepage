@@ -1,0 +1,147 @@
+:root{
+    --orange-color:#DA722C;
+    --blue-color:#057ADA;
+    --dark-color:#023047;
+    --black-color:#070917;
+    --light-color:#E8F7FB;
+    --light-blue-color:#6F7DFB;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: "Poppins",sans-serif;
+}
+.wrapper{
+    max-width: 1366px;
+    margin: 0 116px;
+}
+header{
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    
+}
+.btn{
+    padding: 16px 32px;
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.btn.dark{
+    background-color: var(--dark-color);
+}
+.btn.light{
+    background-color: var(--orange-color);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 36px;
+    /* width: 1134px; */
+    width: 1266px;
+    z-index: 100;
+}
+.navbar h1{
+    color: #FFF;
+    font-family: "Raleway",sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+.navbar ul{
+    gap: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 90px;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.hero-section .left{
+    max-width: 457px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-section .left h2{
+    color: #fff;
+    font-family: "Raleway" ,sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+.hero-section .left p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.hero-section .right{
+    display: flex;
+    
+    align-items: flex-end;
+}
+.hero-section .right img{
+    width: 446px;
+    margin-left: 20%;
+    vertical-align: middle;
+}
+.achievement-card{
+    width: 206px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.achievement-card h1{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 125%;
+  color:var(--dark-color);
+ display: flex;
+ justify-content: center;
+}
+.achievement-card p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+    color: var(--dark-color);
+}
+
+.achievement-card.overall-rating .content div{
+    display: flex;
+    gap: 4px;
+}
+
+
+.achievement-card.student-enrolled{
+  left: 35%;
+}
+.achievement-card.overall-rating{
+right: 100px;
+}

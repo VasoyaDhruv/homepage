@@ -47,10 +47,16 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 36px;
+    padding: 25px 5px;
     /* width: 1134px; */
     width: 1266px;
     z-index: 100;
+}
+.navbar.scrolled{
+    background-color: var(--black-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.5s ease;
 }
 .navbar h1{
     color: #FFF;
@@ -75,13 +81,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 90px;
+    padding-top: 60px;
     position: relative;
     height: 100vh;
     width: 100%;
 }
 .hero-section .left{
-    max-width: 457px;
+   flex:1;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -91,32 +97,50 @@ header{
     font-family: "Raleway" ,sans-serif;
     font-size: 50px;
     font-weight: 900;
+    max-width: 457px;
 }
 .hero-section .left p{
     color: #fff;
     font-size: 16px;
     font-weight: 400;
+    max-width: 457px;
+    line-height: 200%;
+    font-family: "Poppins",sans-serif;
 }
 .hero-section .right{
     display: flex;
-    
-    align-items: flex-end;
+    align-self: flex-end;
 }
 .hero-section .right img{
     width: 446px;
-    margin-left: 20%;
-    vertical-align: middle;
+   
 }
 .achievement-card{
-    width: 206px;
-    height: 90px;
+    position: absolute;
+}
+
+.achievement-card .content{
     display: flex;
     flex-direction: column;
     border-radius: 24px;
+    width: 206px;
+    height: 97px;
     background: #fff;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    z-index: 10;
+    position: relative;
+}
+.achievement-card .bg{
+    right: 20px;
+    width: 206px;
+    height: 97px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+    position:absolute;
+    top: 10px;
+    left: 10px;
 }
 .achievement-card h1{
   font-size: 36px;
@@ -135,13 +159,99 @@ header{
 
 .achievement-card.overall-rating .content div{
     display: flex;
+    align-items: center;
+    gap: 12px;
     gap: 4px;
 }
 
 
 .achievement-card.student-enrolled{
-  left: 35%;
+  left:45%;
+  top: 40%;
 }
 .achievement-card.overall-rating{
-right: 100px;
+  left: 42%;
+  top: 75%;
+}
+
+.testimonial-cards{
+    gap: 50px;
+}
+.testimonial-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.testimonial-section .mobile-btn{
+    display: none;
+}
+
+.testimonial-card{
+    width: 442px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.20);
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+.testimonial-card .card-info{
+    color: #FFF;
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 150%; 
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 32px;
+    width: 442px;
+    border-radius: 24px;
+    background: var(--light-blue-color);
+}
+.testimonial-card .info{
+    padding: 31px 31px;
+}
+.testimonial-card .info h1{
+    color: var(--dark-color);
+    font-family: "Raleway",sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 120%;
+   
+}
+.testimonial-card .info p{
+    color: var(--dark-color);
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.testimonial-card:last-child .card-info{
+    background-color: var(--orange-color);
+}
+.testimonial-card img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 32px;
+    bottom: 15px;
+}
+
+.testimonial-card:last-child{
+    transform: translatex(32px);
+}
+.testimonial-card:first-child::before{
+   content: "";
+   width: 28px;
+   border-radius: 24px;
+   height: 546px;
+   position: absolute;
+   background-color: var(--dark-color);
+   top: -44px;
+   left: 90px;
+   z-index: -1;
 }

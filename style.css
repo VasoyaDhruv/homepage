@@ -47,18 +47,22 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    padding: 25px 5px;
+    padding: 25px 116px;
     /* width: 1134px; */
-    width: 1266px;
+    width: 100%;
     z-index: 100;
+}
+.navbar div{
+    display: flex;
+    justify-content: space-between;
+    width: 1134px;
 }
 .navbar.scrolled{
     background-color: var(--black-color);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     transition: all 0.5s ease;
+    
 }
-.navbar h1{
+.navbar  h1{
     color: #FFF;
     font-family: "Raleway",sans-serif;
     font-size: 40px;
@@ -180,7 +184,8 @@ header{
 .testimonial-section{
     display: flex;
     justify-content: space-between;
-    margin-top: 100px;
+    align-items: center;
+    margin: 100px 0;
 }
 
 .testimonial-section .mobile-btn{
@@ -254,4 +259,237 @@ header{
    top: -44px;
    left: 90px;
    z-index: -1;
+}
+.right-testimonial{
+    max-width: 558px;
+}
+.right-testimonial h2{
+    color: var(--dark-color);
+    font-family: "Raleway",sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 120%; 
+}
+.right-testimonial p{    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 32px */
+    color: var(--dark-color);
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.courses-section{
+    padding-top: 70px;
+    padding-bottom: 170px;
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+}
+.courses-section h1{
+    color: #FFF;
+    text-align: center;
+    font-family: "Raleway",sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 120%;
+}
+.courses-section .courses-card{
+    display: flex;  
+    gap: 72px;
+    margin-top: 56px;
+    justify-content: center;
+}
+.course-card img{
+    width: 100%;
+}
+.course-card{
+    display: flex;
+    padding: 0px 32px;
+    background: #FFF;
+    border-radius: 24px;
+    flex-direction: column;
+    width: 526px;
+    position: relative;
+}
+.course-card .course-info{
+    gap: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.course-card .course-info h3{
+    font-family: "Raleway",sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; 
+    color: var(--dark-color);
+}
+.course-card .course-info .course-duration{
+    color: var(--dark-color);
+    font-family: "Raleway",sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 150%;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+}
+.course-card .course-info .course-duration::before{
+    content: url("./Images/Clock.svg");
+    position: absolute;
+    right: 46px;
+    top: 2px;
+}
+.course-card::after{
+    content: "";
+    position: absolute;
+    height: 8px;
+    left: 32px;
+    right: 32px;
+    bottom: 0;
+    background: var(--dark-color);
+    border-radius: 24px;
+}
+.courses-section .wrapper{
+    position: relative;
+}
+
+.courses-section .wrapper button{
+    margin-top: 40px;
+    position: absolute;
+    right:0;
+}
+
+/* app-section */
+.app-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+.app-section h2{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 120%; /* 72px */
+    color: var(--dark-color);
+}
+.app-section p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%; /* 32px */
+    color: var(--dark-color);
+    margin-top: 13px;
+}
+.app-section .app-component{
+    display: flex;
+    margin-top: 45px;
+    gap: 30px;
+}
+.app-component .store-btn{
+    width: 310px;
+    padding: 20px 31px;
+    align-items: center;
+    gap: 14px;
+    display: flex;
+    gap: 14px;
+    background-color: var(--black-color);
+}
+.store-btn span{
+    text-align: center;
+    font-family: "Poppins",sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 48px */
+    color: #FFF;
+}
+
+footer{
+    background: var(--black-color);
+    padding: 70px 0px;
+}
+
+.link-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+.link-container .links h3{
+    color: var(--orange-color);
+    font-family: "Poppins",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 200%;
+    margin: 14px 0; /* 36px */
+}
+
+.link-container .links ul{
+    padding: 0 24px;
+}
+
+.link-container .links ul li{
+    list-style: none;
+    margin: 9px 0;
+}
+.link-container .links ul li a{
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  /* 32px */
+    color: #FFF;
+}
+.link-container .links .link-icons{
+    display: flex;
+    gap: 28px;
+    margin-top: 16px;
+    margin-bottom: 28px;
+}
+.sub-form input{
+    background: #FFF;
+    font-family: "Poppins",sans-serif;
+    border-radius: 8px;
+    padding: 8px 27px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+}
+.sub-form input::placeholder{
+    color: #000;
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 32px */
+    opacity: 0.5;
+}
+.sub-form{
+    position: relative;
+}
+.sub-form button{
+    background: var(--dark-color);
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%; /* 32px */
+    color: #FFF;
+    border: none;
+    position: absolute;
+    right: 3px;
+    top: 2.8px;
+}
+footer .wrapper p{
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 200%; /* 32px */
+    color: #FFF;
+    margin-top: 32px;
 }

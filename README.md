@@ -10,4 +10,7 @@ This is a straightforward web project showcasing the integration of HTML, CSS, a
  ->navbar section and hero section done for desktop size.
  ->added javascript for navbar scroll effect.
 
-#17 january -->  
+#17 january -->  part-5 - part 9 
+  -> created tablet resposive website
+  -> navbar with menu-icon and menu container for table and mobile devices with eventlistener in JS.
+  

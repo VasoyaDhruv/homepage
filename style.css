@@ -147,7 +147,6 @@ header{
 .achievement-card h1{
   font-size: 36px;
   font-weight: 700;
-  line-height: 125%;
   color:var(--dark-color);
  display: flex;
  justify-content: center;
@@ -155,7 +154,6 @@ header{
 .achievement-card p{
     font-size: 16px;
     font-weight: 400;
-    line-height: 125%;
     color: var(--dark-color);
 }
 
@@ -223,7 +221,6 @@ header{
     font-family: "Raleway",sans-serif;
     font-size: 18px;
     font-weight: 400;
-    line-height: 120%;
 }
 .testimonial-card:last-child .card-info{
     background-color: var(--orange-color);
@@ -257,14 +254,12 @@ header{
     color: var(--dark-color);
     font-family: "Raleway",sans-serif;
     font-size: 60px;
-    font-weight: 900;
-    line-height: 120%; 
+    font-weight: 900; 
 }
 .right-testimonial div p{    
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 200%; /* 32px */
     color: var(--dark-color);
     
 }
@@ -286,7 +281,6 @@ header{
     font-family: "Raleway",sans-serif;
     font-size: 60px;
     font-weight: 900;
-    line-height: 120%;
 }
 .courses-section .courses-card{
     display: flex;  
@@ -320,7 +314,7 @@ header{
     font-size: 30px;
     font-style: normal;
     font-weight: 900;
-    line-height: 150%; 
+
     color: var(--dark-color);
 }
 .course-card .course-info .course-duration{
@@ -376,15 +370,12 @@ header{
 .app-section h2{
     text-align: center;
     font-size: 60px;
-    font-weight: 900;
-    line-height: 120%; /* 72px */
     color: var(--dark-color);
 }
 .app-section p{
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    line-height: 200%; /* 32px */
     color: var(--dark-color);
     margin-top: 13px;
 }
@@ -408,7 +399,6 @@ header{
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 200%; /* 48px */
     color: #FFF;
 }
 
@@ -538,7 +528,7 @@ footer .wrapper p{
 
 @media (max-width:1100px){
     .wrapper{
-        margin: 0 100px;
+        margin:0 100px;
     }
     .mobile-menu-container{
         display: none;
@@ -550,11 +540,10 @@ footer .wrapper p{
         display: flex;
         flex-direction: column;
         max-height: 1194px;
-        padding-top: 60px;
+        padding-top: 263px;
     }
     .hero-section .left{
         width: 100%;
-        
     }
     .hero-section .left p{
         max-width: 634px;
@@ -724,10 +713,10 @@ footer .wrapper p{
         margin:0 32px;
     }
     .mobile-nav{
-        padding: 30px 32px;
+        padding: 10px 32px;
     }
     .mobile-nav.scrolled{
-        padding: 30px 32px;
+        padding: 10px 32px;
     }
 
     .mobile-menu-container .close-icon{

@@ -197,6 +197,9 @@ header{
     box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.20);
     position: relative;
     margin-bottom: 50px;
+    position: relative;
+    z-index: 20;
+
 }
 .testimonial-card .card-info{
     color: #FFF;
@@ -209,6 +212,9 @@ header{
 }
 .testimonial-card .info{
     padding: 31px 31px;
+    background-color: white;
+    border-radius: 24px;
+
 }
 .testimonial-card .info h1{
     color: var(--dark-color);
@@ -236,7 +242,7 @@ header{
 .testimonial-card:last-child{
     transform: translatex(32px);
 }
-.testimonial-card:first-child::before{
+/* .testimonial-card:first-child::before{
    content: "";
    width: 28px;
    border-radius: 24px;
@@ -246,7 +252,27 @@ header{
    top: -44px;
    left: 90px;
    z-index: -1;
+} */
+
+.testimonial-section .testimonial-card::before{
+    content: "";
+    width: 28px;
+    position: absolute;
+    height: 60px;
+    left: 80px;
+    top: -40px;
+    border-radius: 24px 24px 0 0;
+    background-color: var(--dark-color);
+    z-index: -10;
 }
+.testimonial-section .testimonial-card:last-child::before{
+    left: 40px;
+    top: -50px;
+    border-radius: 0 0 24px 24px;
+    height: calc(100% + 90px);
+    z-index: -1;
+}
+
 .right-testimonial{
     max-width: 558px;
 }
@@ -271,7 +297,7 @@ header{
 
 .courses-section{
     padding-top: 70px;
-    padding-bottom: 170px;
+    padding-bottom: 70px;
     background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
    
 }
@@ -351,7 +377,7 @@ header{
 .courses-section-btn button{
    
     right: 0;
-    margin-top: 40px;
+    margin-top: 50px;
     
 }
 
@@ -583,21 +609,12 @@ footer .wrapper p{
     justify-content: flex-end;
    }
  
-   
-   .testimonial-card{
-    width: 100%;
+   .testimonial-section .testimonial-card:last-child::before{
+    left: 80px;
    }
-   .testimonial-card .card-info{
-    width: 100%;
-   }
-   .testimonial-card:last-child{
-     transform: translateX(0px);
-     margin-bottom: 64px;
-   }
-   .testimonial-card:first-child::before{
-    height: 500px;
-    top: -38px;
-   }
+    .testimonial-card:last-child{
+    transform: translateX(0px);
+    }
    .right-testimonial h2{
     font-size: 42px;
    }
@@ -611,8 +628,11 @@ footer .wrapper p{
     display: block;
     align-self: flex-end;
    }
+   .left-testimonial{
+    width: 100%;
+   }
    .testimonial-card{
-    width: 698px;
+     width: 100%;
    }
    .testimonial-section .left-testimonial{
     order: 2;
@@ -809,9 +829,6 @@ footer .wrapper p{
         height: 100px;
         width: 100px;
      }
-     .testimonial-card:first-child::before{
-        left: 50px;
-     }
 
       .courses-section h1{
         font-size: 30px;
@@ -866,12 +883,11 @@ footer .wrapper p{
         height: 34px;
      }
     
-
-}
-
-@media (width < 380px) {
-    .testimonial-card:first-child::before{
-        height: 568px;
-
-    }
+     .testimonial-section{
+        gap: 40px;
+     }
+     .course-card img {
+        height: 260px;
+        
+     }
 }

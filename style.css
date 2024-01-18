@@ -17,6 +17,7 @@ body{
     font-family: "Poppins",sans-serif;
 }
 .wrapper{
+    
     max-width: 1366px;
     margin: 0 116px;
 }
@@ -93,6 +94,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    
 }
 .hero-section .left h2{
     color: #fff;
@@ -140,8 +142,8 @@ header{
     border-radius: 24px;
     background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
     position:absolute;
-    top: 10px;
-    left: 10px;
+    top: 8px;
+    left: 8px;
 }
 .achievement-card h1{
   font-size: 36px;
@@ -284,6 +286,7 @@ header{
     padding-top: 70px;
     padding-bottom: 170px;
     background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+   
 }
 .courses-section h1{
     color: #FFF;
@@ -301,6 +304,7 @@ header{
 }
 .course-card img{
     width: 100%;
+    border-radius: 24px;
 }
 .course-card{
     display: flex;
@@ -353,15 +357,22 @@ header{
     background: var(--dark-color);
     border-radius: 24px;
 }
-.courses-section .wrapper{
-    position: relative;
+
+.courses-section-btn{
+   display: flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+}
+.courses-section-btn button{
+   
+    right: 0;
+    margin-top: 40px;
+    
 }
 
-.courses-section .wrapper button{
-    margin-top: 40px;
-    position: absolute;
-    right:0;
-}
+
+
+
 
 /* app-section */
 .app-section{
@@ -419,7 +430,6 @@ footer{
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
 }
-
 .link-container .links h3{
     color: var(--orange-color);
     font-family: "Poppins",sans-serif;
@@ -431,6 +441,7 @@ footer{
 
 .link-container .links ul{
     padding: 0 24px;
+    width: 100%;
 }
 
 .link-container .links ul li{
@@ -502,7 +513,7 @@ footer .wrapper p{
    width: 100%;
    align-items: center;
    z-index: 100;
-   transition: all 500ms ease;  
+   transition: all 500ms ease ;  
 }
 .mobile-nav h2{
     color: #FFF;
@@ -523,6 +534,7 @@ footer .wrapper p{
 .mobile-menu-container{
     display: none;
 }
+
 
 
 @media (max-width:1100px){
@@ -629,23 +641,19 @@ footer .wrapper p{
    }
    .course-card img{
     height: 260px;
+    width: 100%;
+    object-fit: cover;
    }
 
    .link-container{
     grid-template-columns: 1fr 1fr;
    }
    .link-container .links:last-child{
-    grid-template-columns: 1 / 3;
-    width: 100%;
+    grid-column: 1 /3;  
    }
    .sub-form input{
-    width: 521px;
+    width: 100%;
    }
-
-   footer{
-    grid-template-columns: 1fr 1fr;
-   }
-
 }
     
 @media (max-width:800px){
@@ -734,10 +742,113 @@ footer .wrapper p{
         width: 100%
     };
 
-    .hero-section .right img{
-        width: 309px;
+    .hero-section .left{
+        margin-bottom: 167px;
+    }
+    .hero-section{
+         padding-top: 10px;
+    }
+    .hero-section .right{
+        margin-top: 100px;
+        overflow: hidden;
+        transform: translate(32px);
+        
+    }
+    .hero-section .right img {
+       width: 306px;
+       transform: translateX(80px);
     }
     .hero-section .left h2 {
         font-size: 36px;
     }
+    .achievement-card .content{
+        height: 75px;
+        width: 182px;
+    }
+    .achievement-card:last-child .content{
+        height: 75px;
+        width: 160px;
+    }
+    .achievement-card h1{
+        font-size: 30px;
+    }
+    .achievement-card{
+        margin-top: 146px;
+    }
+    .achievement-card p{
+        font-size: 14px;
+    }
+    .achievement-card .bg{
+        width: 182px;
+        height: 75px;
+        top: 5px;
+        left: 5px;
+    }
+    .achievement-cards{
+        padding-left: 10px;
+    }
+    .achievement-card:last-child .bg{
+        width: 160px;
+        height: 75px;
+    }
+    .achievement-card.student-enrolled{
+        left:unset;
+        top:-1%;
+      }
+      .achievement-card.overall-rating{
+        left: unset;
+        top: -20%;
+      }
+      .right-testimonial h2{
+        font-size: 30px;
+      }
+      .testimonial-card .info h1{
+        font-size: 18px;
+      }
+      .testimonial-card .info p{
+        font-size: 14px;
+      }
+      .courses-section h1{
+        font-size: 30px;
+      }
+      .courses-section .wrapper{
+        margin: 0;
+      }
+      .course-card .course-info h3{
+        font-size: 24px;
+      }
+      .courses-section-btn{
+        padding-right: 30px;
+      }
+      .app-section h2{
+        font-size: 32px;
+      }
+      .app-component .store-btn{
+        padding-inline-start: 12px 31px;
+      }
+      footer .wrapper{
+        text-align: center;
+        padding: 0;
+      }
+      .link-container .links{
+        margin-bottom: 12px;
+      }
+      .link-container .links .link-icons{
+        justify-content: center;
+      }
+     .sub-form button{
+        position: unset;
+        width: fit-content;
+       
+     }
+     .sub-form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+       align-items: center;
+     }
+     footer .wrapper p{
+        font-size: 14px;
+     }
+
 }

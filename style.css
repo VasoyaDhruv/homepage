@@ -108,7 +108,6 @@ header{
     font-size: 16px;
     font-weight: 400;
     max-width: 457px;
-    line-height: 200%;
     font-family: "Poppins",sans-serif;
 }
 .hero-section .right{
@@ -116,7 +115,7 @@ header{
     align-self: flex-end;
 }
 .hero-section .right img{
-    width: 446px;
+    height: 506px;
 }
 .achievement-card{
     position: absolute;
@@ -180,22 +179,21 @@ header{
 .testimonial-cards{
     gap: 50px;
 }
+
+
 .testimonial-section{
     display: flex;
+    gap: 100px;
     justify-content: space-between;
     align-items: center;
     margin: 100px 0;
 }
-
 .testimonial-section .mobile-btn{
     display: none;
 }
 
 .testimonial-card{
     width: 442px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     border-radius: 24px;
     background: #FFF;
     box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.20);
@@ -207,11 +205,7 @@ header{
     font-family: "Raleway",sans-serif;
     font-size: 18px;
     font-weight: 900;
-    line-height: 150%; 
-    display: flex;
-    align-items: flex-start;
     padding: 24px 32px;
-    width: 442px;
     border-radius: 24px;
     background: var(--light-blue-color);
 }
@@ -223,8 +217,6 @@ header{
     font-family: "Raleway",sans-serif;
     font-size: 24px;
     font-weight: 900;
-    line-height: 120%;
-   
 }
 .testimonial-card .info p{
     color: var(--dark-color);
@@ -336,7 +328,6 @@ header{
     font-family: "Raleway",sans-serif;
     font-size: 16px;
     font-weight: 900;
-    line-height: 150%;
     text-align: center;
     white-space: nowrap;
     position: relative;
@@ -344,8 +335,8 @@ header{
 .course-card .course-info .course-duration::before{
     content: url("./Images/Clock.svg");
     position: absolute;
-    right: 46px;
-    top: 2px;
+    right: 49px;
+    top: 0px;
 }
 .course-card::after{
     content: "";
@@ -468,8 +459,12 @@ footer{
     border-radius: 8px;
     padding: 8px 27px;
     width: 100%;
+    padding-right:9rem ;
     font-size: 16px;
     border: none;
+}
+.sub-form input:focus{
+    outline: none;
 }
 .sub-form input::placeholder{
     color: #000;
@@ -492,9 +487,13 @@ footer{
     line-height: 200%; /* 32px */
     color: #FFF;
     border: none;
+    padding: 0  27px;
+    height: 30px;
+    display: flex;
+    align-items: center;
     position: absolute;
-    right: 3px;
-    top: 2.8px;
+    right: 4.8px;
+    top: 4.5px;
 }
 footer .wrapper p{
     font-family: "Poppins",sans-serif;
@@ -555,7 +554,7 @@ footer .wrapper p{
     }
     .hero-section .left{
         width: 100%;
-        margin-top: 167px;
+        
     }
     .hero-section .left p{
         max-width: 634px;
@@ -587,8 +586,17 @@ footer .wrapper p{
     display: flex;
     flex-direction: column;
    }
+
+   .learn-more-mobile-btn{
+    display: flex;
+    right: 0;
+    width: 100%;
+    justify-content: flex-end;
+   }
+ 
+   
    .testimonial-card{
-    width: 634px;
+    width: 100%;
    }
    .testimonial-card .card-info{
     width: 100%;
@@ -610,7 +618,7 @@ footer .wrapper p{
    .right-testimonial .desktop-btn{
     display: none;
    }
-   .testimonial-section .mobile-btn{
+   .testimonial-section  .mobile-btn{
     display: block;
     align-self: flex-end;
    }
@@ -625,9 +633,8 @@ footer .wrapper p{
     margin-bottom: 58px;
     max-width: 100%;
    }
-   .testimonial-section .mobile-btn{
+   .testimonial-section div{
     order: 3;
-    align-self: flex-end;
    }
 
    .courses-section .courses-card {
@@ -640,7 +647,7 @@ footer .wrapper p{
     width: 100%;
    }
    .course-card img{
-    height: 260px;
+    height: 350px;
     width: 100%;
     object-fit: cover;
    }
@@ -742,24 +749,30 @@ footer .wrapper p{
         width: 100%
     };
 
-    .hero-section .left{
-        margin-bottom: 167px;
+    header .wrapper{
+        padding-top: 100px;
     }
+
     .hero-section{
-         padding-top: 10px;
+         padding-top: 100px;
+         height: 100vh;
     }
     .hero-section .right{
-        margin-top: 100px;
         overflow: hidden;
         transform: translate(32px);
-        
     }
     .hero-section .right img {
-       width: 306px;
-       transform: translateX(80px);
+       height: 325px;
+       transform: translateX(60px);
     }
     .hero-section .left h2 {
         font-size: 36px;
+    }
+    .achievement-cards{
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 30px;
     }
     .achievement-card .content{
         height: 75px;
@@ -772,9 +785,7 @@ footer .wrapper p{
     .achievement-card h1{
         font-size: 30px;
     }
-    .achievement-card{
-        margin-top: 146px;
-    }
+  
     .achievement-card p{
         font-size: 14px;
     }
@@ -784,20 +795,17 @@ footer .wrapper p{
         top: 5px;
         left: 5px;
     }
-    .achievement-cards{
-        padding-left: 10px;
-    }
     .achievement-card:last-child .bg{
         width: 160px;
         height: 75px;
     }
     .achievement-card.student-enrolled{
         left:unset;
-        top:-1%;
+        top:40px;
       }
       .achievement-card.overall-rating{
         left: unset;
-        top: -20%;
+        top: -50px;
       }
       .right-testimonial h2{
         font-size: 30px;
@@ -808,6 +816,14 @@ footer .wrapper p{
       .testimonial-card .info p{
         font-size: 14px;
       }
+      .testimonial-card img{
+        height: 100px;
+        width: 100px;
+     }
+     .testimonial-card:first-child::before{
+        left: 50px;
+     }
+
       .courses-section h1{
         font-size: 30px;
       }
@@ -825,6 +841,10 @@ footer .wrapper p{
       }
       .app-component .store-btn{
         padding-inline-start: 12px 31px;
+      }
+      .link-container{
+        display: flex;
+        flex-direction: column;
       }
       footer .wrapper{
         text-align: center;
@@ -850,5 +870,19 @@ footer .wrapper p{
      footer .wrapper p{
         font-size: 14px;
      }
+     .sub-form input{
+        padding-right: unset;
+     };
+     .sub-form button{
+        height: 34px;
+     }
+    
 
+}
+
+@media (width < 380px) {
+    .testimonial-card:first-child::before{
+        height: 568px;
+
+    }
 }

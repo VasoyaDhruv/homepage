@@ -248,7 +248,7 @@ header{
     width: 28px;
     position: absolute;
     height: 60px;
-    left: 80px;
+    left: 72px;
     top: -40px;
     border-radius: 24px 24px 0 0;
     background-color: var(--dark-color);
@@ -601,6 +601,9 @@ footer .wrapper p{
    }
  
    .testimonial-section .testimonial-card:last-child::before{
+    left: 80px;
+   }
+   .testimonial-section .testimonial-card::before{
     left: 80px;
    }
     .testimonial-card:last-child{

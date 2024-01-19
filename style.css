@@ -55,7 +55,8 @@ header{
 .navbar div{
     display: flex;
     justify-content: space-between;
-    width: 1134px;
+    max-width: 1366px;
+    width: 100%;
 }
 .navbar.scrolled{
     backdrop-filter: blur(10px);

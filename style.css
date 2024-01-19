@@ -242,17 +242,6 @@ header{
 .testimonial-card:last-child{
     transform: translatex(32px);
 }
-/* .testimonial-card:first-child::before{
-   content: "";
-   width: 28px;
-   border-radius: 24px;
-   height: 546px;
-   position: absolute;
-   background-color: var(--dark-color);
-   top: -44px;
-   left: 90px;
-   z-index: -1;
-} */
 
 .testimonial-section .testimonial-card::before{
     content: "";
@@ -740,8 +729,8 @@ footer .wrapper p{
     }
 
     .mobile-menu-container .close-icon{
-        right: 32px;
-        top: 30px;
+        top: 10px;
+        right: 32px;x
     }
 
     .testimonial-card{

@@ -15,4 +15,7 @@ This is a straightforward web project showcasing the integration of HTML, CSS, a
   -> navbar with menu-icon and menu container for table and mobile devices
   -> added functions to menu icon and 
 and created close icon for show and hide menu-container
-    
+
+#18 january --> part 10- part 12
+ ->mobile responsive
+ ->fix some issues
